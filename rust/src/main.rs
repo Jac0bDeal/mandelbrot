@@ -77,11 +77,11 @@ fn main() -> std::io::Result<()>{
 }
 
 fn get_color_value(c: num_complex::Complex<f32>) -> u8 {
-    let mut z = Complex::new(0.0, 0.0);
+    let mut z: Complex<f32> = Complex::new(0.0, 0.0);
 
     let mut iter: u16 = 0;
     while z.norm() < 2.0 && iter <= 34 {
-        z = z*z + c;
+        z = &z*&z + &c;
         iter += 1;
     }
 
