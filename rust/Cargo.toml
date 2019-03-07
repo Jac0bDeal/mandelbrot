@@ -1,0 +1,9 @@
+[package]
+name = "mandelbrot"
+version = "0.1.0"
+authors = ["Jacob Deal <jacob.r.deal@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32"
+num-complex = "0.2"
